@@ -5,5 +5,11 @@ $(function(){
   nextArrow: '<button class="slider-btn slider-btn__right"><svg width="60" height="48" viewBox="0 0 60 48" fill="none" xmlns="http://www.w3.org/2000/svg">< rect width="60" height="48" fill="white" /><path d="M25.7816 32L34 24L25.7816 16"/></svg></button>',
   infinite:false
  });
+ $('.questions__item-title').on('click', function () {
+
+  $('.questions__item').removeClass('questions__item--active');
+  $(this).parent().addClass('questions__item--active');
+  
+ });
 
 });
